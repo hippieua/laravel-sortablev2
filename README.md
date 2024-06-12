@@ -1,5 +1,8 @@
-
 # Laravel Sortable v2
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/hippieua/laravel-sortablev2.svg?style=flat-square)](https://packagist.org/packages/hippieua/laravel-sortablev2)
+[![Total Downloads](https://img.shields.io/packagist/dt/hippieua/laravel-sortablev2.svg?style=flat-square)](https://packagist.org/packages/hippieua/laravel-sortablev2)
+[![License](https://img.shields.io/packagist/l/hippieua/laravel-sortablev2.svg?style=flat-square)](https://packagist.org/packages/hippieua/laravel-sortablev2)
 
 Laravel Sortable v2 is a Laravel package designed to easily add sortable behavior to Eloquent models. This package allows you to manage the order of database records via simple trait inclusion.
 
