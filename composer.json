@@ -1,0 +1,27 @@
+{
+  "name": "hippieua/laravel-sortablev2",
+  "description": "Trait to sort order in Laravel model",
+  "keywords": [
+    "laravel",
+    "laravel-sortable-models"
+  ],
+  "homepage": "https://github.com/hippieua/laravel-sortablev2",
+  "authors": [
+    {
+      "name": "Vitalii Gura",
+      "email": "v.v.gura@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Hippieua\\Sortable2\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "illuminate/database": "^9|^10|^11"
+  }
+}
