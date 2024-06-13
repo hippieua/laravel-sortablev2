@@ -28,12 +28,12 @@ trait Sortable2
         static::creating(fn (Model $model) => self::initializeSortableField($model));
     }
 
-    protected function getSortableField(): string
+    public function getSortableField(): string
     {
         return 'order_id';
     }
 
-    protected function getSortableRelation(): ?BelongsTo
+    public function getSortableRelation(): ?BelongsTo
     {
         return null;
     }
