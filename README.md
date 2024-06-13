@@ -24,7 +24,22 @@ composer require hippieua/laravel-sortablev2
 
 ### Setup
 
-1. **Include the Trait in Your Model**
+1. **Make migration to add sortable field to your model**
+
+```bash
+php artisan make:migration "Add order_id to Categories"
+```
+```php
+public function up(): void
+{
+    Schema::table('categories', function (Blueprint $table) {
+        $table->unsignedBigInteger('order_id')->default(0)->after('id');
+    });
+
+    Category::orderBy('id')->each(fn($category, $index) => $category->update(['order_id' => $index++]));
+}
+```
+2. **Include the Trait in Your Model**
 
 ```php
 namespace App\Models;
@@ -37,7 +52,6 @@ class Chapter extends Model
     use Sortable2;
 }
 ```
-
 2. **Define Sortable Field and Optional Relation**
 
 Override methods in your model if you need a custom sortable field or a specific relation for sorting:
